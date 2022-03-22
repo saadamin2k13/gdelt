@@ -1,0 +1,7 @@
+SELECT * 
+    FROM `gdelt-bq.gdeltv2.ggg` 
+    WHERE DATE(DateTime) = "2021-08-13"
+    and Title like ('% art %')
+    and LangCode = "eng"
+    and CountryCode = "US"
+LIMIT 5000
