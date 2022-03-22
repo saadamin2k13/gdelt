@@ -1,0 +1,8 @@
+SELECT * 
+    FROM `gdelt-bq.gdeltv2.ggg` 
+    WHERE DATE(DateTime) = "2020-06-02"
+    and Title like ('% business %')
+    and LangCode = "eng"
+    and DomainCountryCode = "UK"
+    and CountryCode = "UK"
+LIMIT 5000
