@@ -1,0 +1,8 @@
+SELECT * 
+    FROM `gdelt-bq.gdeltv2.ggg` 
+    WHERE DATE(DateTime) = "2021-02-22"
+    and Title like ('% Gossip %')
+    and LangCode = "eng"
+    and DomainCountryCode = "US"
+    and CountryCode = "US"
+LIMIT 5000
