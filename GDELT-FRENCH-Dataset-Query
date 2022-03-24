@@ -1,0 +1,8 @@
+SELECT toUrl 
+    FROM `gdelt-bq.gdeltv2.gsg` 
+    WHERE DATE(fromDate) >= "2022-03-01"
+    and DATE(fromDate) <= "2022-03-31"
+    and fromTitle like ('% art %') 
+    and fromLang = "ENGLISH"
+    and toLang = "FRENCH"   
+LIMIT 5000
