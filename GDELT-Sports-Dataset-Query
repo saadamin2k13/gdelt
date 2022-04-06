@@ -1,4 +1,4 @@
-SELECT * 
+SELECT distinct URL 
     FROM `gdelt-bq.gdeltv2.ggg` 
     WHERE DATE(DateTime) = "2021-05-22"
     and Title like ('% sports %')
