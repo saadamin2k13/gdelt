@@ -1,8 +1,0 @@
-SELECT * 
-    FROM `gdelt-bq.gdeltv2.ggg` 
-    WHERE DATE(DateTime) = "2021-01-03"
-    and Title like ('% technology %')
-    and LangCode = "eng"
-    and DomainCountryCode = "US"
-    and CountryCode = "US"
-LIMIT 5000
